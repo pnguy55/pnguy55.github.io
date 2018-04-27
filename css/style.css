@@ -1,0 +1,286 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
+
+body {
+  background: #F0F8EA;
+  font-family: 'Quicksand', sans-serif;
+}
+
+
+
+header {
+  background: ghostwhite;
+  color: black;
+  padding: 1em;
+  padding-bottom: 2em;
+  position: relative;
+  
+}
+
+.logo {
+  float: left;
+  font-size: 1rem;
+ 
+  text-transform: uppercase;
+  font-weight: 700;
+  
+}
+
+.logo span {
+  font-weight: 400;
+}
+
+.site-nav {
+  position: absolute;
+  top: 100%;
+  right: 0%;
+  background: ghostwhite;
+  overflow: hidden;
+  clip-path: circle(0px at top right);
+  transition: all ease-in-out 500ms;
+/*   display: none; */
+}
+
+.site-nav--open {
+  clip-path: circle(100%);
+
+}
+
+.site-nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.site-nav li:first-child {
+  border-top: 1px solid;
+}
+.site-nav li {
+  border-bottom: 1px solid #575766;
+}
+
+.site-nav li:last-child {
+  border-bottom: none;
+}
+
+.site-nav a {
+  color: black;
+  display: block;
+  padding: 2em 3em 2em 2em;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.site-nav a:hover,
+.site-nav a:focus {
+  background: #E4B363;
+  color: #464655;
+}
+
+.menu-toggle {
+  padding: 1em;
+  position: absolute;
+  top: .5em;
+  right: .5em;
+  cursor: pointer;
+}
+/* Burger creation */
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+  content: '';
+  display: block;
+  background: black;
+  height: 3px;
+  width: 1.75em;
+  border-radius: 3px;
+  transition: clip-path ease-in-out 500ms;
+}
+
+.hamburger::before {
+  transform: translateY(-7px);
+}
+
+.hamburger::after {
+  transform: translateY(4px);
+}
+
+.open .hamburger {
+  transform: rotate(90deg);
+  
+}
+
+@media (min-width: 680px) {
+ .menu-toggle {
+    display: none;
+  }
+  
+  .site-nav {
+    height: auto;
+    position: relative;
+    background: transparent;
+    float: right;
+    clip-path: initial;
+  }
+  
+  .site-nav li {
+    display: inline-block;
+    border: none;
+  }
+  
+  .site-nav li:first-child {
+    border-top: none;
+  }
+  
+  .site-nav a {
+    padding: 0;
+    margin-left: 3em;
+  }
+  
+  .site-nav a:hover,
+  .site-nav a:focus {
+    background: transparent;
+  }
+  
+  .site-nav--icon {
+    display: none;
+  }
+  
+}
+
+/* Start of header */
+.header-container {
+  color: ghostwhite;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+ }
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  flex-wrap: wrap;
+  
+  }
+
+.selfie {
+  max-width: 100%;
+  border-style: solid;
+  border-radius: 2%;
+  margin: 30px;
+}
+.intro {
+  margin: 30px;
+} 
+
+/*portfolio starts here */
+.photo-grid-container {
+  display: flex;
+  justify-content: center;
+  background-color: ghostwhite;
+  width: 100%;
+}
+
+.photo-grid {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.photo-grid-item {
+  border: 1px solid #fff;
+  width: 300px;
+  height: 300px;
+}
+
+/* Start of contact form*/
+.contact-list-container{
+  width: 100%;
+  background-color: ghostwhite;
+}
+.contact-list {
+  display: flex;
+  flex-direction: column;
+  background-color: ghostwhite;
+  width: 100%; 
+  
+}
+
+.contact-me {
+  border-bottom: 4px solid;
+  margin: 2em;
+  background: ghostwhite;
+}
+
+.left-side {
+  padding: 10px;
+}
+.right-side {
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  
+}
+
+
+
+
+/*footer*/
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.footer-item {
+  
+  background-color: black;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-one,
+.footer-three {
+  background-color: black;
+  display:flex;
+  flex-direction: column;
+  color: ghostwhite ;
+  flex: 1;
+}
+
+.nested-f1-1 {
+  margin-bottom: -1.2em;
+}
+.footer-two {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  flex: 2;
+  flex-direction: row;
+  background-color: ghostwhite;
+}
+
+
+.nested-f2-2 {
+  margin-bottom: -.7em;
+  margin-right: 1em;
+  margin-left: 1em;
+}
+
+.nested-f2-4 {
+  margin-left: .8em;
+  margin-bottom: -.15em;
+}
