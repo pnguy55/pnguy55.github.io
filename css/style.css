@@ -76,8 +76,8 @@ header {
 }
 .site-nav a:hover,
 .site-nav a:focus {
-  background: #E4B363;
-  color: #464655;
+  background: black;
+  color: ghostwhite;
 }
 
 .menu-toggle {
