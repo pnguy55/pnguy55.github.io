@@ -180,8 +180,15 @@ header {
 } 
 
 /*portfolio starts here */
+.port-title{
+  background-color: ghostwhite;
+  height: 100%;
+  border-bottom: 4px solid;
+  padding-top: 2em;
+  background: ghostwhite;
+}
 .photo-grid-container {
-  display: flex;
+  padding-top: 1em;
   justify-content: center;
   background-color: ghostwhite;
   width: 100%;
