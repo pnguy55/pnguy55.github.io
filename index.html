@@ -3,70 +3,75 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Phi Nguyen Portfolio Site</title>
+  <title>Phi Nguyen Portfolio Site v2</title>
   
   
   <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.css'>
 
       <link rel="stylesheet" href="css/style.css">
 
-      <link rel="icon" href="https://drive.google.com/uc?id=1q7B4rsfNIZrOHb3fVMpD-7dMUzl1uA_y"></link>
   
 </head>
 
+<body>
+
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
 
-<!--upper nav bar-->
-<header>
-  
-    
-    <h1 class="logo">Phi      <span>Nguyen</span></h1>
-    
-    <nav class="site-nav">
-      <ul>
-        <li><a href="#about">About</a></li> 
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#contact"></i>Contact</a></li>
-      </ul> 
-   </nav>
-  
-  <div class="menu-toggle">
-    <div class="hamburger"></div>
-    </div>
-  
-  
-</header>
+<!--Start of nav bar-->
+    <ul id='header-wrap'>
+      <li id='header-img-wrap'>
+        <h1 class="logo">Phi      <span>Nguyen</span></h1>
+      </li>
+      <li id='nav-bar-wrap'>
+        <nav id='navbar'>
+              <div class='nav'><a class='nav-link' href='#about'>
+                About Me
+              </a></div>
+              <div class='nav'><a class='nav-link' href='#projects'>
+                Portfolio
+              </a></div>
+              <div class='nav'><a class='nav-link' href='#contact'>
+                Contact
+              </a></div>
+        </nav>
+      </li>
+    </ul>
+<!--End of Nav-->
 
 <!--Start of about grid-->
-<body>
   <div class='header-container' id="about">
-    <div class='header'>
+    <div class='header' id='welcome-section'>
     
-      <div class='selfie img-responsive'><img src="https://drive.google.com/uc?id=10Axr8hf9GGQ5un2X15B5MyHiqxkZI1mc"/></div>
-      <div class="intro"> Front-end developer with practical experience in Web development and Javascript from an object oriented background.  Fully devoted to the craft of code.</div>
+      <div class='selfie'><img id='header-img' src="https://drive.google.com/uc?id=10Axr8hf9GGQ5un2X15B5MyHiqxkZI1mc"/></div>
+      <div id='descrip'> <h1 class='text-center'>Front-end developer</h1> <p class='text-center'>with practical experience in Web development and Javascript from an object oriented background.  Fully devoted to the craft of code.</p></div>
     </div>
   </div>
   
  <!--start of portfolio grid, input portfolio pieces here.-->
-  <div class="port-title text-center"><h4>The Portfolio</h4></div>
+  <div id='projects-wrap'>
+    <div id='projects'></div>
+    <div class="port-title"><h4 id='title'>The Portfolio</h4></div>
+  </div>
   
-  <div class='photo-grid-container' id="portfolio">
+  <div class='photo-grid-container'>
     
     
       <div class='photo-grid'>
-        <div class='photo-grid-item first-item'>
+        <div class='project-tile first-item' >
         <a href="https://codepen.io/pnguy55/pen/NMNJZP" target="_blank"><img src='https://drive.google.com/uc?id=1Jq2ewKX21UFQLECbbceahg0D6T8aHHn8'/></a>
         </div>
-        <div class='photo-grid-item'>
+        <div class='project-tile'>
         <a href="https://codepen.io/pnguy55/pen/GdNMPZ" target="_blank"><img src='https://drive.google.com/uc?id=1cctiT5S8AZHEiLSSYeRo6DfAqNd8gwor'></a>
         </div>
-        <div class='photo-grid-item'>
+        <div class='project-tile'>
               <a href='https://codepen.io/pnguy55/pen/BxpJME'  target='_blank'><img src='https://drive.google.com/uc?id=1iM0sATGJ7x6OGNrgQSw5Cp7Mvlayqgti'/></a>
         </div>
-        <div class='photo-grid-item'>
-        <a href='https://codepen.io/pnguy55/pen/MGVoBL'  target='_blank'><img src='https://drive.google.com/uc?id=1CdwqYsNz6Vtj0vJk7XmJiIWtQdoD2jjr'/></a>
+        <div class='project-tile'>
+            <a href='https://codepen.io/pnguy55/pen/MGVoBL'  target='_blank'><img src='https://drive.google.com/uc?id=1CdwqYsNz6Vtj0vJk7XmJiIWtQdoD2jjr'/></a>
         </div>
-        <div class='photo-grid-item last-item'>
+        <div class='project-tile last-item'>
           <img src='https://drive.google.com/uc?id=1fWNotak9FZRs5csDhOyGfTDyeAq5xY7-'/>
         </div>
     </div>
@@ -74,8 +79,9 @@
   
   <!--Start of contact form-->    
       
-  <div class= "contact-list-container">
-  <div class="contact-list" id="contact">
+  <div class= "contact-list-container" >
+  <div class="contact-list">
+    <div id="contact"></div>
     <div class="contact-me text-center">Contact Me</div>
    
     <form method="post action="index.php">
@@ -112,17 +118,14 @@
   <div class='footer-item footer-two'>
     <div class="nested-f2-1"><a href="https://www.linkedin.com/in/phihongnguyen" target="_blank" ><img src="https://drive.google.com/uc?id=1yxqw_ppfeh4hQPFp8hJLGhVms99YT97j"></img></a></div>
     
-    <div class="nested-f2-2"><a href="https://www.freecodecamp.org/pnguy55" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" width="2em" height="1.39em" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 2304 1600"><path d="M453 1541q0 21-16 37.5t-37 16.5q-1 0-13-3-63-15-162-140Q0 1168 0 776q0-341 213-614 39-51 95-103.5T402 6q19 0 35 13.5T453 52q0 27-63 90-98 102-147 184-119 199-119 449 0 281 123 491 50 85 136 173 2 3 14.5 16t19.5 21 17 20.5 14.5 23.5 4.5 21zm1343-134q0 29-17.5 48.5T1732 1475H651q-26 0-45-19t-19-45q0-29 17.5-48.5T651 1343h1081q26 0 45 19t19 45zm-215-611q0 134-67 233-25 38-69.5 78.5T1361 1168q-16 10-27 10-7 0-15-6t-8-12q0-9 19-30t42-46 42-67.5 19-88.5q0-76-35-130-29-42-46-42-3 0-3 5 0 12 7.5 35.5t7.5 36.5q0 22-21.5 35t-44.5 13q-66 0-66-76 0-15 1.5-44t1.5-44q0-25-10-46-13-25-42-53.5t-51-28.5q-5 0-7 .5t-3.5 2.5-1.5 6q0 2 16 26t16 54q0 37-19 68t-46 54-53.5 46-45.5 54-19 68q0 98 42 160 29 43 79 63 16 5 17 10 1 2 1 5 0 16-18 16-6 0-33-11-119-43-195-139.5T786 853q0-55 24.5-115.5t60-115T941 514t59.5-113.5T1025 289q0-53-25-94-29-48-56-64-19-9-19-21 0-20 41-20 50 0 110 29 41 19 71 44.5t49.5 51T1230 277t22 69 16 80q0 1 3 17.5t4.5 25 5.5 25 9 27 11 21.5 14.5 16.5 18.5 5.5q23 0 37-14t14-37q0-25-20-67t-20-52 10-10q27 0 93 70 72 76 102.5 156t30.5 186zm723 29q0 274-138 503-19 32-48 72t-68 86.5-81 77-74 30.5q-16 0-31-15.5t-15-31.5q0-15 29-50.5t68.5-77 48.5-52.5q183-230 183-531 0-131-20.5-235T2085 390q-58-119-163-228-2-3-13-13.5t-16.5-16.5-15-17.5-15-20T1853 76t-4-19q0-19 16-35.5T1900 5q70 0 196 169 98 131 146 273t60 314q2 42 2 64z" fill="#626262"/><rect x="0" y="0" width="2304" height="1600" fill="rgba(0, 0, 0, 0)" />      </svg>   </a>                </div>
-                                                                                        <div class="nested-f2-3"><a href="https://github.com/pnguy55" target="_blank"><img src="https://drive.google.com/uc?id=1WUbwjaHxfRGzJZJwua1o87QlFI_UmXe1"></img></a></div>
+    <div class="nested-f2-2"><a href="https://www.freecodecamp.org/pnguy55" target="_blank" id='profile-link'><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" width="2em" height="1.39em" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 2304 1600"><path d="M453 1541q0 21-16 37.5t-37 16.5q-1 0-13-3-63-15-162-140Q0 1168 0 776q0-341 213-614 39-51 95-103.5T402 6q19 0 35 13.5T453 52q0 27-63 90-98 102-147 184-119 199-119 449 0 281 123 491 50 85 136 173 2 3 14.5 16t19.5 21 17 20.5 14.5 23.5 4.5 21zm1343-134q0 29-17.5 48.5T1732 1475H651q-26 0-45-19t-19-45q0-29 17.5-48.5T651 1343h1081q26 0 45 19t19 45zm-215-611q0 134-67 233-25 38-69.5 78.5T1361 1168q-16 10-27 10-7 0-15-6t-8-12q0-9 19-30t42-46 42-67.5 19-88.5q0-76-35-130-29-42-46-42-3 0-3 5 0 12 7.5 35.5t7.5 36.5q0 22-21.5 35t-44.5 13q-66 0-66-76 0-15 1.5-44t1.5-44q0-25-10-46-13-25-42-53.5t-51-28.5q-5 0-7 .5t-3.5 2.5-1.5 6q0 2 16 26t16 54q0 37-19 68t-46 54-53.5 46-45.5 54-19 68q0 98 42 160 29 43 79 63 16 5 17 10 1 2 1 5 0 16-18 16-6 0-33-11-119-43-195-139.5T786 853q0-55 24.5-115.5t60-115T941 514t59.5-113.5T1025 289q0-53-25-94-29-48-56-64-19-9-19-21 0-20 41-20 50 0 110 29 41 19 71 44.5t49.5 51T1230 277t22 69 16 80q0 1 3 17.5t4.5 25 5.5 25 9 27 11 21.5 14.5 16.5 18.5 5.5q23 0 37-14t14-37q0-25-20-67t-20-52 10-10q27 0 93 70 72 76 102.5 156t30.5 186zm723 29q0 274-138 503-19 32-48 72t-68 86.5-81 77-74 30.5q-16 0-31-15.5t-15-31.5q0-15 29-50.5t68.5-77 48.5-52.5q183-230 183-531 0-131-20.5-235T2085 390q-58-119-163-228-2-3-13-13.5t-16.5-16.5-15-17.5-15-20T1853 76t-4-19q0-19 16-35.5T1900 5q70 0 196 169 98 131 146 273t60 314q2 42 2 64z" fill="#626262"/><rect x="0" y="0" width="2304" height="1600" fill="rgba(0, 0, 0, 0)" />      </svg>   </a>                </div>
+                                                                                        <div class="nested-f2-3" ><a href="https://github.com/pnguy55" target="_blank" id='profile-link'><img src="https://drive.google.com/uc?id=1WUbwjaHxfRGzJZJwua1o87QlFI_UmXe1"></img></a></div>
                                                                                         <div class="nested-f2-4"><a href="https://codepen.io/pnguy55/" target="_blank"><img src="https://drive.google.com/uc?id=158eiS3hyxP-YGp329BgpPvgyAwLdQr5q"></img></a></div>
                               
     </div>
                           
   <div class='footer-item footer-three'> April 2018</div>
   </div>
-
-
-</body>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
 
   
