@@ -49,12 +49,15 @@ function goToPortfolio(){
   var portfolio = document.getElementById('portfolio');
   var skills = document.getElementById('skills');
   var portfolioCopy = document.getElementById('portfolio-copy');
+  var aside = document.getElementById('aside');
   
   selfie.classList.add('hide');
-  skills.classList.add('hide');
+  aside.classList.add('hide');
   about.classList.add('hide');
+  
   portfolio.classList.remove('hide');
   portfolioCopy.classList.remove('hide');
+  
 }
 
 function goToAboutMe(){
